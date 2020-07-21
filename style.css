@@ -130,6 +130,11 @@ nav ul.right{float: right;}
      background-repeat: no-repeat;
      background-size: cover;
     }
+.banner .intro a{
+    color: yellow;
+    margin: 20px 0;
+    display: inline-block;
+}
  .banner .intro h1{
      font-weight: 700;
      font-size: 70px;
