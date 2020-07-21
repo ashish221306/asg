@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/bootstrap.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="./js/bootstrap.min.jsp"></script>
 <script src="./owl-slider/js/owl.carousel.js"></script>
 <link rel="stylesheet" href="./style.css">
@@ -498,11 +498,15 @@
         </section>
         
     </div>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    document.querySelector('.header .menu').onclick=function(){
+  /*  document.querySelector('.header .menu').onclick=function(){
         document.querySelector('.header .headerlist').classList.toggle('show');
-    }
+    }*/
+
+    $('.header .menu').click(function(){
+        $('.header .headerlist').slideToggle('slow');
+    })
     </script>
 </body>
 <footer>
