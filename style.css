@@ -545,7 +545,7 @@ footer
 footer .contact li{margin-bottom: 7px;}
 footer .useful-link li{margin-bottom: 14px;}
 
-.footer-link{list-style: none;}
+.footer-link{list-style: none;margin: 0;padding: 0}
 .footer-link li{display:block;float: right;}
 footer ul{list-style: none;list-style-position: outside;margin: 0;padding: 0}
 footer ul li a{text-decoration: none;color: #ffffff}
@@ -577,10 +577,9 @@ footer form *{background: transparent}
 
 footer form input{
     display: inline-block;
-    width: 100%;
     padding: 6px 5px;
     border-radius: 10px 0 0 10px;
-    width: 80%;
+    width:60%;
     outline: none;
     background: transparent;
     border: none;
@@ -654,10 +653,7 @@ footer h2{
     footer div[class*='col-']{
         margin: 17px auto
     }
-    footer ul.footer-link{
-        float: none;
-        display: block;
-    }
+   
     section.viewall .navigation{
         text-align: center;
         padding: 20px;
@@ -698,4 +694,13 @@ footer h2{
     }
     section.whoweare{text-align: center}
     section.whoweare p{text-align: center}
+    footer .footer-link{
+        width: 100%;
+        text-align: center!important;
+    }
+    
+    footer .footer-link span{float: none}
+    footer .footer-link b{width: 100%}
+  
+    footer .footer-link li a i.fa{font-size: 20px}
 }
