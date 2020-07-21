@@ -137,6 +137,7 @@ nav ul.right{float: right;}
     }
     .feature .mention{
       margin: 20px 0;
+        text-align: justify;
        
     }
     
@@ -177,6 +178,11 @@ nav ul.right{float: right;}
     }
     
     .mn .left h2{font-size:16px}
+     #gototop{
+        right:30px;
+        bottom: 30px;
+         margin: 10px;
+    }
 }
  
  .banner .mn{width: 100%;height: 60px;}
@@ -280,15 +286,15 @@ section.viewall{
     
 }
 section.viewall .navigation{
-    margin: 20px auto;
-    float: right
+    
+   text-align: right
 }
 .viewslide{
     opacity: 1;
     display: inline-block;
     font-size: 18px;
-    width:240px;
-    margin: 10px 20px;
+    width: 300px;
+    margin:20px 10px;
     text-align: center;
     box-shadow: 0px 0px 3px 2px #777;  
 }
@@ -403,17 +409,25 @@ section.testimonial{
     margin: 40px auto;
         
 }
-section.testimonial .tophead h2{
+section.testimonial .tophead b{
     margin-left: 20px;
     text-align: center;
     font-size: 40px;
     text-align: left;
     display: inline-block;
-    
     padding: 30px;
-  
+  width: 70%;
     font-weight: 600;
     
+}
+section.testimonial .navigation{
+    width: auto;
+    background: yellow;
+    padding: 5px 20px;
+    margin: auto;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 
@@ -583,6 +597,13 @@ footer span.copyright{font-weight: 600;color: #777;}
 
 footer .footer-link h2{font-size: 10px}
 footer .footer-link b{margin-right: 8px;}
+footer .gallery{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+}
 footer .gallery img{
     margin: 2px auto;
     height: 100px;
@@ -615,7 +636,11 @@ footer h2{
         text-align: center;
     }
     .viewslide{width:auto;padding-bottom:20px }
-    footer .footer-link{text-align: center;float: none;}
+    footer .footer-link{display: block;text-align: center;float: none;}
+    footer span.copyright{
+        display: block;
+        text-align: center;
+    }
 }
 @media screen and (max-width:700px){
     .banner{padding-left: 20px;
@@ -632,6 +657,11 @@ footer h2{
     footer ul.footer-link{
         float: none;
         display: block;
+    }
+    section.viewall .navigation{
+        text-align: center;
+        padding: 20px;
+        margin: 10px 20px;
     }
     
 }
@@ -654,7 +684,18 @@ footer h2{
 
 @media screen and (max-width:700px){
     #gototop{
-        right: 50px;
+        right:20px;
         bottom: 20px;
     }
+    
+    section.testimonial .tophead b{
+        display: block;width: 100%;
+    }
+    section.testimonial .tophead .navigation{
+        padding: 10px 40px;
+        margin-bottom: 20px;
+        background: yellow;
+    }
+    section.whoweare{text-align: center}
+    section.whoweare p{text-align: center}
 }
