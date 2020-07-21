@@ -22,8 +22,9 @@
     color: #f1f1f1;
     outline: none;
     border: none;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    border-top: 0.2px solid #666;
+    border-bottom: 0.2px solid #666;
+   
 }
  .header #logo{
      padding: 60px 40px;
@@ -90,9 +91,22 @@ nav ul.right{float: right;}
 
 
 
-
-
-
+.banner .bannerlogo{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.banner .bannerlogo li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.banner .bannerlogo li img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #666;
+}
 
 
 
@@ -109,7 +123,7 @@ nav ul.right{float: right;}
      padding-left: 100px;
      padding-top: 100px;
      color: #f1f1f1;
-     height: 90vh;
+     
      width: 100%;
      background-image: url(./img/car.jpg);
      background-position: center;
@@ -130,6 +144,7 @@ nav ul.right{float: right;}
     margin-bottom: 40px;
  }
 @media screen and (max-width: 700px){
+    .banner .bannerlogo{text-align: center}
     .header #logo{display: block;text-align: center}
     .header .headerlist{display: block;width: 100%;transition: all 0.6s ease;}
     .header .headerlist li a{text-decoration: none}
