@@ -3,11 +3,13 @@
      margin: 0;
      
  }
+
  h1,h2,h3,h4{margin: 0;padding: 0;}
  .header{
      background: hsl(0, 0%, 0%);
      font-size: 20px;
-     padding-top: 20px;
+     padding:20px 0;
+    
     
  }
  .header a{width: 30%; color: #f1f1f1;}
@@ -35,7 +37,7 @@
      background: #000;
      float: right;
      list-style: none;
-     
+     transition: all 0.6s linear;
      margin: 0;
      display: block;
     }
@@ -49,6 +51,57 @@
     .header .headerlist li a i{ margin-right: 10px;padding: 10px;border-right: 1px solid}
    
  
+  nav{
+      
+      position: absolute;
+      transform: translateX(10%);
+      width: 80%;
+      background:rgb(88, 173, 253);
+      margin: auto;
+  }
+  nav ul{
+      display: inline-block;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+nav ul.right{float: right;}
+  nav ul li{
+      display: inline-block;
+      padding: 10px;
+      margin: 0px 5px;
+    }
+ nav ul li a{color: #f1f1f1;font-weight: 600;font-size: 18px;}
+ nav ul li a.active{color:yellow}
+
+@media screen and (max-width:700px){
+    
+    nav{display: none}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  .banner{
      padding-left: 100px;
@@ -83,8 +136,8 @@
         padding-top: 50px;
     }
     .feature .mention{
-        margin: 20px auto;
-        border: 2px solid #000
+      margin: 20px auto;
+       
     }
     
 
@@ -361,13 +414,11 @@ section.testimonial .tophead h2{
     font-weight: 600;
     
 }
-section.testimonial span{
-    
-}
+
 
 section.testimonial .review{
     height: auto;
-    width: 350px;
+    width: 300px;
     display: inline-block;
     text-align:center;
     margin: 40px 30px;
@@ -414,7 +465,7 @@ section.route h2{
 section.route .lists .table{
     width: 100%;
     margin: auto 20px;
-    border: 1px solid #777
+    border: 1px solid #777;
    padding: 10px 20px;
     text-align: center;
 }
@@ -439,7 +490,7 @@ section.newcarupdate p .button{
 }
 
 
-section.whoweare{}
+
 section.whoweare img{transform: translateY(50px)}
 section.whoweare h2{
     font-size:40px;
@@ -478,7 +529,7 @@ footer .centerbold{
 footer 
 footer .contact li{margin-bottom: 7px;}
 footer .useful-link li{margin-bottom: 14px;}
-footer .useful-link li a i{}
+
 .footer-link{list-style: none;}
 .footer-link li{display:block;float: right;}
 footer ul{list-style: none;list-style-position: outside;margin: 0;padding: 0}
@@ -521,9 +572,11 @@ footer form input{
     font-size: 18px;
 }
 
-footer form button{outline:none;border: none;display: inline-block;width: 20%;float: right;padding: 10px;font-size: 20px}
-footer form button i.fa.telegram{color: #5959f8;font-weight: 600;}
-footer span.copyright{font-weight: 600;color: #777}
+footer form button{outline:none;border: none;width: 20%;padding: 10px;font-size: 20px}
+
+footer form button i.fa.telegram{color: #5959f8;font-weight: 600;float: right;}
+
+footer span.copyright{font-weight: 600;color: #777;}
 /*------------footer form end-------------------*/
 
 
@@ -560,7 +613,7 @@ footer h2{
         width:78px ;
         text-align: center;
     }
-    .viewslide{width: 347px;padding-bottom:20px }
+    .viewslide{width:auto;padding-bottom:20px }
     footer .footer-link{text-align: center;float: none;}
 }
 @media screen and (max-width:700px){
@@ -580,4 +633,27 @@ footer h2{
         display: block;
     }
     
+}
+#gototop{
+    background: #ffffff;
+    color: #000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+        
+}
+#gototop i.fa{font-size: 25px;font-weight: 600}
+
+@media screen and (max-width:700px){
+    #gototop{
+        right: 50px;
+        bottom: 20px;
+    }
 }
