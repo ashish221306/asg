@@ -1,0 +1,583 @@
+
+ html,body{
+     margin: 0;
+     
+ }
+ h1,h2,h3,h4{margin: 0;padding: 0;}
+ .header{
+     background: hsl(0, 0%, 0%);
+     font-size: 20px;
+     padding-top: 20px;
+    
+ }
+ .header a{width: 30%; color: #f1f1f1;}
+.header .menu{
+    display: none;
+    width: 100%;
+    padding: 10px 20px;
+    background: #000;
+    color: #f1f1f1;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+ .header #logo{
+     padding: 60px 40px;
+ }
+
+#logopng{
+    height: 70px;
+    width: 100px;
+}
+ .header .headerlist{
+     
+     background: #000;
+     float: right;
+     list-style: none;
+     
+     margin: 0;
+     display: block;
+    }
+    .header .headerlist>li{
+        display: inline-block;
+       
+    }
+    .header .headerlist li{padding: 10px 20px;}
+    .header .headerlist li a:hover{text-decoration: none}
+    .header .headerlist li a>i>fa.whatsapp{color: green}
+    .header .headerlist li a i{ margin-right: 10px;padding: 10px;border-right: 1px solid}
+   
+ 
+ 
+ .banner{
+     padding-left: 100px;
+     padding-top: 100px;
+     color: #f1f1f1;
+     height: 90vh;
+     width: 100%;
+     background-image: url(./img/carr.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+ .banner .intro h1{
+     font-weight: 700;
+     font-size: 70px;
+     
+    }
+ .banner .intro p{
+     color: yellow;
+     font-size: 30px;
+     font-weight: 600;
+ }
+ .banner .intro{
+    margin-bottom: 40px;
+ }
+@media screen and (max-width: 700px){
+    .header #logo{display: block;text-align: center}
+    .header .headerlist{display: block;width: 100%;transition: all 0.6s ease;}
+    .header .headerlist li a{text-decoration: none}
+    .header .menu{display: block}
+    .banner{
+        padding-top: 50px;
+    }
+    .feature .mention{
+        margin: 20px auto;
+        border: 2px solid #000
+    }
+    
+
+    .show{display: block;}   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .banner .intro h1{font-size: 25px}
+    .banner .intro p{font-size: 18px}
+    
+}
+
+@media screen and (max-width:500px){
+    .header{text-align: center}
+    .header #logo{
+        padding: 6px 1px;
+        display: block;
+        width: 100%}
+    .header .headerlist{display: none}
+    .header .headerlist li{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #777;
+        text-align: center;
+    }
+    
+    .mn .left h2{font-size:16px}
+}
+ 
+ .banner .mn{width: 100%;height: 60px;}
+ .banner .mn .left{
+     height: 100%;
+     float: left;
+     width: 30%;
+     background: rgb(66, 66, 231);
+    }
+ .banner .mn .left h2{padding: 10px 20px;}
+ .banner .mn .right{
+     height: 100%;
+     float: left;
+     width: 70%;
+     background: yellow;
+    }
+ .banner .mn .right ul{list-style: none;}
+ .banner .mn .right ul li{
+     display: inline-block;
+     text-align: center;
+     padding:10px 20px;
+     font-size: 20px;
+     
+    }
+ .banner .mn .right ul li:not(:last-child)::after{content: '|';color: #000;margin-left: 15px;}
+ .banner .mn .clear{clear: both;}
+ 
+ .banner .form{
+     background: #000;
+ }
+ .banner .form .element{
+     display: inline-block;
+     padding: 10px;
+    
+     color: #000;
+ }
+
+ .banner .form .element select{
+     background: #ddd;
+     padding: 6px 15px;
+     font-size: 16px;
+ }
+ .banner .form .element label{
+     display: block;
+     color: #f1f1f1;
+     font-size: 14px;
+     font-weight: 200;
+     letter-spacing: 2px;
+ }
+ .banner .form .element input[type='submit']{
+    background:yellow;
+    padding: 10px 42px;
+    border-radius:10px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+ }
+ 
+ .updateslide >p{
+     font-size: 25px;
+     letter-spacing: 2px;
+ }
+ 
+
+ section.feature{
+     color: #000;
+     font-size:18px;
+     margin: 40px auto;
+     background: rgb(238, 237, 210);
+     padding: 20px 30px;
+ }
+
+@media screen and (max-width:700px){
+    section.feature{
+        text-align: center
+    }
+}
+
+ section.feature h2{font-size:23px;}
+ section.feature span{margin-right: 10px;float: left}
+ section.feature p{float: right}
+ section.feature img{
+     height: 70px;
+     width: 70px;
+     border-radius: 50%;
+ }
+ 
+ 
+section.whoweare{
+    margin: 40px auto
+}
+ 
+
+
+
+
+section.viewall{
+    margin: 50px auto;
+    
+}
+section.viewall .navigation{
+    margin: 20px auto;
+    float: right
+}
+.viewslide{
+    opacity: 1;
+    display: inline-block;
+    font-size: 18px;
+    width:240px;
+    margin: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 2px #777;  
+}
+.viewslide img{
+    height: 200px;
+    width: 100%}
+
+.viewslide .body{padding: 10px}
+
+section.viewall .viewslide .title{
+    font-weight: 700;color: blue;
+border-bottom: 2px solid #4343dd;
+display: inline-block;
+text-align: center}
+
+.viewslide .price{
+    border-bottom: 6px solid #000;
+    padding-bottom: 10px;
+}
+.viewslide .detail{
+    padding: 40px auto;
+    font-weight: 600
+}
+.viewslide .button{
+    background: yellow;
+    color: #000;    
+}
+
+
+
+section.funfacts{
+    background: #f2d2d4;
+    margin: 50px auto;
+    padding: 50px 30px;
+}
+section.funfacts b{
+    font-size: 18px;
+    border-bottom: 1px solid;
+    display: inline-block;
+    text-align: center
+}
+section.funfacts h2{
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 60px
+}
+section.funfacts .client-container{
+    text-align: center
+}
+section.funfacts .clients{
+   
+    height: 300px;
+    width:240px;
+    margin: 10px ;
+    text-align: center;
+    display: inline-block
+}
+section.funfacts .clients.aqua{background: #93bfbf!important}
+section.funfacts .clients.aqua-light{background: #85bebe}
+section.funfacts .clients.yellow{background: #f2f282}
+.clients img{
+    margin:30px auto;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%
+}
+.clients h4{
+    font-size: 27px;
+    font-weight: 700;
+}
+.clients h5{
+    font-weight: 700;
+    font-size: 24px
+}
+
+
+
+section.carfleet{
+    background: yellow;
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+section.carfleet b{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+}
+section.carfleet .carslide img{
+    height: auto;
+    width: 100%;
+}
+section.carfleet .carslide p{
+    font-size: 30px;
+    font-weight: 600; 
+    padding: 10px
+}
+section.carfleet .carslide h3{
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 800;
+}
+
+
+section.testimonial{
+    
+    text-align: center;
+    margin: 40px auto;
+        
+}
+section.testimonial .tophead h2{
+    margin-left: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-align: left;
+    display: inline-block;
+    
+    padding: 30px;
+  
+    font-weight: 600;
+    
+}
+section.testimonial span{
+    
+}
+
+section.testimonial .review{
+    height: auto;
+    width: 350px;
+    display: inline-block;
+    text-align:center;
+    margin: 40px 30px;
+    
+}
+section.testimonial .review img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transform: translateY(-50px)
+}
+section.testimonial .review p{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify
+}
+section.testimonial .review h4{
+    font-size: 22px;
+    font-weight: 600;
+}
+section.testimonial .review b{
+    font-size:100px;
+    margin: 0;
+    padding: 0;
+    color: yellow;
+        
+}
+
+
+
+section.route{
+    padding: 20px auto;
+    margin: 50px auto;
+}
+section.route .lists{
+    text-align: center;
+    width: 95%;
+}
+section.route h2{
+    padding: 20px;
+    font-weight: 500;
+}
+section.route .lists .table{
+    width: 100%;
+    margin: auto 20px;
+    border: 1px solid #777
+   padding: 10px 20px;
+    text-align: center;
+}
+
+section.newcarupdate{
+    padding: 40px;
+    text-align: center;
+}
+section.newcarupdate h2{
+    font-size: 40px;
+    padding: 20px;
+}
+section.newcarupdate q{
+    padding: 20px;
+    font-size: 25px;
+    display: block;
+    
+    
+}
+section.newcarupdate p .button{
+    background: yellow;
+}
+
+
+section.whoweare{}
+section.whoweare img{transform: translateY(50px)}
+section.whoweare h2{
+    font-size:40px;
+    font-weight: 700;
+    padding-bottom: 20px
+}
+section.whoweare p{
+    font-size:20px;
+    text-align:left
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ footer{background: rgba(0,0,0,0.9);
+    color: #f1f1f1;
+    padding: 20px;
+}
+footer .centerbold{
+    font-size: 20px;
+    font-weight: 400;
+}
+footer 
+footer .contact li{margin-bottom: 7px;}
+footer .useful-link li{margin-bottom: 14px;}
+footer .useful-link li a i{}
+.footer-link{list-style: none;}
+.footer-link li{display:block;float: right;}
+footer ul{list-style: none;list-style-position: outside;margin: 0;padding: 0}
+footer ul li a{text-decoration: none;color: #ffffff}
+footer ul li a:hover{text-decoration: none;color: #ffffff}
+footer .para{
+    font-size: 18px;
+    line-height: 1.5
+}
+footer h2{margin-bottom: 20px}
+footer ul li a{color: #f1f1f1;text-decoration: none;}
+footer h2.subscribe{margin: 10px auto}
+footer h2+p{font-size: 18px}
+ footer ul li a i{color: rgb(7, 132, 182);margin-right: 10px;} 
+
+.footer-link span{float: left;width: 20%;font-size: 20px;color: rgb(53, 50, 50);}
+.footer-link ul{display: inline-block;width: 80%;}
+
+hr{background: rgb(59, 57, 57);}
+
+/*------------footer form-------------------*/
+footer form{
+    
+    background: rgb(68, 65, 65);
+    border-radius: 10px;
+    width: 180px;
+    padding: 10px 20px;
+}
+footer form *{background: transparent}
+
+footer form input{
+    display: inline-block;
+    width: 100%;
+    padding: 6px 5px;
+    border-radius: 10px 0 0 10px;
+    width: 80%;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+footer form button{outline:none;border: none;display: inline-block;width: 20%;float: right;padding: 10px;font-size: 20px}
+footer form button i.fa.telegram{color: #5959f8;font-weight: 600;}
+footer span.copyright{font-weight: 600;color: #777}
+/*------------footer form end-------------------*/
+
+
+footer .footer-link h2{font-size: 10px}
+footer .footer-link b{margin-right: 8px;}
+footer .gallery img{
+    margin: 2px auto;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+footer h2{
+    font-size: 25px;
+    font-weight: 700;
+    border-left: 3px solid;
+    color: rgb(7, 132, 182);
+    padding-left: 10px;
+}
+
+.button{
+    background: rgb(92, 165, 248);
+    padding: 10px 42px;
+    border-radius:10px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width:700px){
+    footer .gallery img{
+        height: 78px;
+        width:78px ;
+        text-align: center;
+    }
+    .viewslide{width: 347px;padding-bottom:20px }
+    footer .footer-link{text-align: center;float: none;}
+}
+@media screen and (max-width:700px){
+    .banner{padding-left: 20px;
+    height: auto;}
+    .banner>h1{font-size: 25px;}
+    .banner>p{font-size: 17px;}
+    
+    section.viewall{
+        text-align: center
+    }
+    footer div[class*='col-']{
+        margin: 17px auto
+    }
+    footer ul.footer-link{
+        float: none;
+        display: block;
+    }
+    
+}
